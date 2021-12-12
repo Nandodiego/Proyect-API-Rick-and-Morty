@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-header: #FFFFFF;
+    --bg-primary: linear-gradient(180deg, #000000 0%, #413535 100%);
+    --bg-boton-next: #CDCBD9;
+    --color-boton-next: #2D2A2A;
+    --border-images: 2px solid #FFFFFF;
+    --color-datas: #FFFFFF;
+    --color-footer: #FFFFFF;
+    --font-Karla: 'Karla', sans-serif;
+}
+
+.body{
+    background: var(--bg-primary);
+    min-height: 96vh;
+}
+
+.containerCharacters__datas{
+    min-width: 414px;
+}
+
+.container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.container__images{
+    width: 190px;
+    height: 190px;
+    border: var(--border-images);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.containerCharacters__datas{
+    padding-left: 24px;
+    margin-bottom: 66px;
+}
+
+.datas{
+    font-family: var(--font-Karla);
+    color: var(--color-datas);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.divNext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#divNext__btnNext{
+    width: 240px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: var(--font-Karla);
+    font-size: 18px;
+    background: var(--bg-boton-next);
+    color: var(--color-boton-next);
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer__text{
+    color: var(--color-footer);
+    font-size: 12px;
+    font-family: var(--font-Karla);
+}
+
+@media(min-width: 768px){
+
+    .body{
+        min-height: 100vh;
+    }
+
+    .container__images{
+        width: 320px;
+        height: 320px;
+    }
+    
+    .containerCharacters__datas{
+        padding-left: 40px
+    }
+
+    .datas{
+        font-size: 40px;
+    }
+
+    #divNext__btnNext{
+        width: 340px;
+        height: 40px;
+    }
+
+    .footer{
+        margin-top: 0;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(min-width: 1280px){
+    #containerCharacters{
+        padding-top: 168px;
+        width: 1248px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerCharacters__datas{
+        width: 930px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0;
+        padding-top: 58px;
+    }
+
+    .datas{
+        font-size: 30px;
+    }
+
+    .footer{
+        margin-top: 170px;
+    }
+}
