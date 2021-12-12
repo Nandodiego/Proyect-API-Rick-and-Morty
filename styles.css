@@ -10,6 +10,7 @@
     --bg-cards: linear-gradient(180deg, #383A3F 0.01%, #2E2D35 100%);
     --box-shadow-cards: 0px 6px 0px 2px #000000;
     --border-images: 2px solid #FFFFFF;
+    --border-input-search: 1px solid #CDCBD9;
     --color-datas: #FFFFFF;
     --bg-show-me-more: #CDCBD9;
     --color-show-me-more: #2D2A2A;
@@ -38,16 +39,18 @@
 .inputs__inputSearch{
     width: 300px;
     height: 30px;
+    font-size: 16px;
     border-radius: 4px;
-    border: 1px solid #CDCBD9;
+    border: var(--border-input-search);
     background: none;
     padding-left: 8px;
     color: var(--bg-show-me-more);
 }
 
 .inputs__inputSearch:focus{
+    font-size: 16px;
     outline: none;
-    border: 1px solid #CDCBD9;
+    border: var(--border-input-search);
 }
 
 .header__h1{
@@ -165,6 +168,11 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    .inputs__inputSearch{
+        width: 450px;
+        height: 30px;
     }
 
     .container__information{
