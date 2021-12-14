@@ -43,6 +43,7 @@
     border-radius: 4px;
     border: var(--border-input-search);
     background: none;
+    padding-right: 8px;
     padding-left: 8px;
     color: var(--bg-show-me-more);
 }
@@ -76,6 +77,7 @@
 }
 
 .container__information{
+    cursor: pointer;
     border-radius: 4px;
     padding: 7px;
     background: var(--bg-cards);
