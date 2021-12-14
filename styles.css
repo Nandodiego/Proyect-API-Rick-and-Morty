@@ -64,12 +64,10 @@
 .main__information{
     margin: 0 auto;
     background: var(--bg-primary);
-    min-height: 100vh;
 }
 
 #container{
     margin: 0 auto;
-    width: 414px;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
