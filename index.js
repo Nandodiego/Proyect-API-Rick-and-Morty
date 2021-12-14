@@ -34,7 +34,7 @@ const filtrar = async (event) => {
 function getAllCharacters(data, container){
     for(let i = 0; i<data.results.length; i++){
         container.innerHTML += 
-            `<div onclick="redirec(${data.results[i].id})" class="container__information">
+            `<div class="container__information">
                 <img class="information__images" src="${data.results[i].image}">
                 <div class="information__datas">
                     <p class="datas__name">Name: ${data.results[i].name}</p>
@@ -59,7 +59,7 @@ async function getCharacterByName(urlBase, nameToFind){
 function printCharacter(data, container){
     for(let i = 0; i<data.results.length; i++){
         container.innerHTML += 
-            `<div onclick="redirec(${data.results[i].id})" class="container__information">
+            `<div class="container__information">
                 <img class="information__images" src="${data.results[i].image}">
                 <div class="information__datas">
                     <p class="datas__name">Name: ${data.results[i].name}</p>
