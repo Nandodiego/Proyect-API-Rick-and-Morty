@@ -88,6 +88,7 @@
     color: var(--color-footer);
     font-size: 12px;
     font-family: var(--font-Karla);
+    padding-bottom: 18px;
 }
 
 @media(min-width: 768px){
